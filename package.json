@@ -1,0 +1,51 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node app.js",
+    "server": "NODE_ENV=development nodemon app.js",
+    "client": "npm run dev --prefix client",
+    "lint-front": "npm run pre-commit --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seeds": "NODE_ENV=development node seeds.js",
+    "lint": "npm run lint-front --silent && npm run lint-back --silent",
+    "lint-back": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote",
+      "eslint --fix"
+    ]
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "client"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.0",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^1.1.3",
+    "lint-staged": "^7.3.0",
+    "nodemon": "^1.18.6",
+    "prettier": "^1.14.3"
+  },
+  "description": "",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-front --silent && npm run lint-back --silent"
+    }
+  }
+}
