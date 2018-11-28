@@ -108,7 +108,6 @@ To build and bundle your client resources for production, while inside the clien
 - [Babel 7](https://github.com/babel/babel)
 - [React 16.6.3](https://github.com/facebook/react)
 - [Stylized Components 4.1.1](https://github.com/styled-components/styled-components)
-- [Lodash](https://github.com/lodash/lodash)
 - [Jest](https://github.com/facebook/jest)
 - [Enzyme](http://airbnb.io/enzyme/)
 - [Eslint](https://github.com/eslint/eslint/)
