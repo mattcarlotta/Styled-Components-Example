@@ -1,6 +1,6 @@
-## Weather Application
+## Styled Components Example
 
-A refactored weather application. Find the original source <a href="https://github.com/Loratadin/weather-app">here</a>.
+A working example of applying generated styles from a styled-component to a child component via HTML selectors.
 
 ## Table of contents
 
@@ -66,18 +66,12 @@ A refactored weather application. Find the original source <a href="https://gith
 1 - Clone the repository.
 
 ```
- git clone -b master git@github.com:mattcarlotta/Weather-App.git
+ git clone -b master git@github.com:mattcarlotta/Styled-Components-Example.git
 ```
 
 2 - Run `npm i && cd client && npm i` to install dependencies.
 
-3 - You must create a `config` folder in `client/src` with an `index.js` file that exports an <a href="https://openweathermap.org">Open Weather Map API Key<a/>
-
-```
-export const API_KEY = 'your_open_weather_api_key';
-```
-
-4 - While at the application's root directory, start both servers by running `npm run dev`.
+3 - While at the application's root directory, start both servers by running `npm run dev`.
 
 ## Commands
 
@@ -112,8 +106,8 @@ To build and bundle your client resources for production, while inside the clien
 
 - [Webpack 4](https://github.com/webpack/webpack)
 - [Babel 7](https://github.com/babel/babel)
-- [React 16.6.0](https://github.com/facebook/react)
-- [Stylized Components 4.0.3](https://github.com/styled-components/styled-components)
+- [React 16.6.3](https://github.com/facebook/react)
+- [Stylized Components 4.1.1](https://github.com/styled-components/styled-components)
 - [Lodash](https://github.com/lodash/lodash)
 - [Jest](https://github.com/facebook/jest)
 - [Enzyme](http://airbnb.io/enzyme/)
